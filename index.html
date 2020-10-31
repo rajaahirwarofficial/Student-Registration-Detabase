@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JEC Student Registration</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+                $('ul').toggleClass('active');
+			})
+		})
+	</script>
+</head>
+<body>
+ <div id="navbar">
+ 	<h2>JEC Student Registration</h2>
+ 	<a class="toggle"><img src="images/bar2.png"></a>
+ 	<ul>
+ 		<li><a href="#" class="active">Home</a></li>
+ 		<li><a href="#">Enrollment</a></li>
+ 		<li><a href="#">About</a></li>
+ 		<li><a href="#">Contact</a></li>
+ 	</ul>
+ </div>
+ <div class="loginbox">
+ 	<h2>Registration</h2>
+ 	<form method="post" action="server.php">
+ 	<center><input type="text" name="username" placeholder="Username" class="inputbox" required=""></center>
+ 	<center><input type="text" name="name" placeholder="Full Name" class="inputbox" required=""></center>
+ 	<center><input type="email" name="email" placeholder="Email" class="inputbox" required=""></center>
+ 	<center><input type="text" name="mobile" placeholder="Mobile Number" class="inputbox" required=""></center>
+ 	<center><input type="password" name="password_1" placeholder="Password" class="inputbox" required=""></center>
+ 	<center><input type="password" name="password_2" placeholder="Confirm Password" class="inputbox" required=""></center>
+ 	<center><input type="submit" name="reg_user" value="Submit" class="submit_btn"></center>
+    </form>
+ </div>
+</body>
+</html>
+
