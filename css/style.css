@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+#navbar {
+	height: 70px;
+	width: 100%;
+	background: #0e0e65;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 15px;
+	position: fixed;
+}
+
+#navbar h2 {
+	float: left;
+	margin-top: 20px;
+	margin-left: 25px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.toggle img {
+	float: right;
+	height: 50px;
+	width: auto;
+	margin-top: 10px;
+	margin-right: 5px;
+	display: none;
+}
+
+#navbar ul {
+	float: right;
+	display: flex;
+	list-style-type: none;
+	margin-top: 22px;
+	margin-right: 20px;
+
+}
+
+#navbar ul li {
+	padding: 5px 8px;
+}
+
+#navbar ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	border: 2px solid #fff;
+	padding: 8px 10px;
+	color: #fff;
+	transition: 0.4s ease;
+}
+
+#navbar ul li a:hover {
+	background: red;
+}
+
+#navbar ul li a.active {
+	background: red;
+	color: #fff;
+}
+
+.loginbox {
+	height: 550px;
+	width: 40%;
+	float: left;
+	margin-left: 29.999%;
+	background: #0e0e65;
+	margin-top: 100px;
+	border: 5px solid red;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.loginbox h2 {
+	text-align: center;
+	color: #fff;
+	padding: 15px 0px;
+}
+
+.inputbox {
+	height: 30px;
+	width: 60%;
+	border: 1px solid #fff;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+
+.submit_btn {
+	height: 50px;
+	width: 60%;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 20px;
+	background: red;
+	font-weight: bold;
+	font-size: 25px;
+	color: #fff;
+}
+
+
+.succ h2 {
+	color: #fff;
+	padding: 40px 0px;
+	background: #0e0e65;
+	font-size: 30px;
+}
+
+.success_btn {
+	background: red;
+	color: #fff;
+	padding: 20px 20px;
+	margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+
+     .loginbox {
+	width: 80%;
+	margin-left: 10%;
+    }
+
+    #navbar ul {
+	display: none;
+	width: 100%;
+	margin-right: 0px;
+	margin-top: 10px;
+    }
+
+
+    #navbar ul li a {
+    	text-align: center;
+    	display: block;
+    	border: none;
+    	margin: 0px;
+    	background: rgba(0,0,0,0.5);
+    }
+
+    #navbar ul li {
+    	padding: 0px;
+    }
+
+    #navbar ul.active {
+    	display: block;
+    }
+
+    .toggle img {
+    	display: block;
+    	cursor: pointer;
+    }
+
+    #navbar h2 {
+    	font-size: 20px;
+    	margin-top: 25px;
+    }
+
+}
